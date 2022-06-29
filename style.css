@@ -2,4 +2,97 @@
     font-family:sans-serif;
     line-height: 1.62em;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+    margin-top: 3em;
+}
+
+header,
+main,
+footer{
+    max-width: 700px;
+    margin: 0 auto;
+}
+h1,h2,h3 {
+    color:rgb(64, 23, 23);
+}
+
+
+
+header{
+    padding: 2em 0;
+}
+header h1{
+font-size: 2em;
+}
+header span {
+    font-size: 1.5em;
+    color: #999;
+}
+
+nav{
+    position:fixed;
+    top: 0;
+    right: 0;
+   background: rgb(27, 27, 27);
+   display: flex;
+   flex-flow: row;
+   justify-content: center;
+   width: 100%;
+}
+
+nav a {
+    padding: .5em 2em;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    background: #667;
+}
+section {
+    margin:1em 0;
+
+    padding-top:3em;
+    min-height:5em;
+}
+section > p {
+    margin: 1em 0;
+}
+section ul{
+padding-left: 2em;
+
+}
+#products article
+{
+    display: grid;
+    grid-template-columns: repeat(3, 0.4fr);
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    
+    
+}
+#products article img
+{
+    width: 100%;
+    border: 1px solid #333;
+    
+}
+#products article
+{
+    background: #ccc;
+    padding: 1em;
+}
+footer{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background:#667;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+
 }
